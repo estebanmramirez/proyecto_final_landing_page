@@ -21,6 +21,71 @@
         margin: 0;
     }
 
+    .container {
+        width: 500px;
+        margin-left: 22%;
+    }
+
+    .container img {
+        width: 100px;
+        margin-left: 35%;
+        cursor: pointer;
+    }
+
+    .container h2 {
+        font-family: var(--font-family);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .container p {
+        font-family: var(--font-family);
+        color: var(--grayish-blue);
+        text-align: center;
+    }
+
+    .container div {
+        margin-left: 10%;
+    }
+
+    .container div button:nth-child(1){
+        background-color: var(--strong-cyan);
+        color: white;
+        height: 45px;
+        width: 200px;
+        border-radius: 20px;
+        border-width: 0 0 3px 0;
+        border-bottom-color: var(--strong-cyan);
+        cursor: pointer;
+    }
+
+    .container div button:nth-child(2){
+        background-color: var(--light-blue);
+        color: white;
+        height: 45px;
+        width: 200px;
+        border-radius: 20px;
+        border-width: 0 0 3px 0;
+        border-bottom-color: var(--light-blue);
+        cursor: pointer;
+    }
+
+    .middle {
+        width: 500px;
+        margin-left: 22%;
+    }
+
+    .middle h3{
+        font-family: var(--font-family);
+        text-align: center;
+    }
+
+    .middle p {
+        font-family: var(--font-family);
+        color: var(--grayish-blue);
+        text-align: center;
+    }
+
 </style>
 <body>
 
@@ -34,7 +99,7 @@
         </div>
     </section>
 
-    <div>
+    <div class="middle">
         <h3>Keep track of your snippets</h3>
         <p>Clipboard instantly stores any time you copy in the cloud, meaning you can access your snippets inmediately on all your devices. Our mac and ios app will help you organize everything</p>
     </div>
