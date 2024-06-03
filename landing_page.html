@@ -57,6 +57,8 @@
         border-width: 0 0 3px 0;
         border-bottom-color: var(--strong-cyan);
         cursor: pointer;
+        font-family: var(--font-family);
+        font-size: 14px;
     }
 
     .container div button:nth-child(2){
@@ -68,6 +70,8 @@
         border-width: 0 0 3px 0;
         border-bottom-color: var(--light-blue);
         cursor: pointer;
+        font-family: var(--font-family);
+        font-size: 14px;
     }
 
     .middle {
@@ -84,6 +88,98 @@
         font-family: var(--font-family);
         color: var(--grayish-blue);
         text-align: center;
+    }
+
+    .container-middle {
+        display: flex;
+    }
+
+    .container-img{
+        width: 380px;
+        height: 380px;
+    }
+
+    .container-middle div {
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .title {
+        font-family: var(--font-family);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-family: var(--font-family);
+        color: var(--grayish-blue);
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .pc-img {
+        width: 600px;
+        height: 380px;
+        margin-left: 10%;
+    }
+
+    .container-service {
+        display: flex;
+    }
+
+    .container-logos {
+        display: flex;
+    }
+
+    .container-logos img {
+        width: 120px;
+        height: 40px;
+        margin-left: 25px;
+    }
+
+    .container-bottom {
+        width: 500px;
+        margin-left: 22%;
+    }
+
+    .container-bottom h2 {
+        font-family: var(--font-family);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .container-bottom p {
+        font-family: var(--font-family);
+        color: var(--grayish-blue);
+        text-align: center;
+    }
+
+    
+    .container-bottom div button:nth-child(1){
+        background-color: var(--strong-cyan);
+        color: white;
+        height: 45px;
+        width: 200px;
+        border-radius: 20px;
+        border-width: 0 0 3px 0;
+        border-bottom-color: var(--strong-cyan);
+        cursor: pointer;
+        font-family: var(--font-family);
+        font-size: 14px;
+    }
+
+    .container-bottom div button:nth-child(2){
+        background-color: var(--light-blue);
+        color: white;
+        height: 45px;
+        width: 200px;
+        border-radius: 20px;
+        border-width: 0 0 3px 0;
+        border-bottom-color: var(--light-blue);
+        cursor: pointer;
+        font-family: var(--font-family);
+        font-size: 14px;
     }
 
 </style>
@@ -105,67 +201,66 @@
     </div>
 
     <section class="container-middle">
-        <img src="" alt="">
+        <img src="./images/image-computer.png" alt="" class="container-img">
         <div>
             <div>
-                <p>Quick search</p>
-                <p>Easily search your snippets by content, category, web address, application and more</p>
+                <p class="title">Quick search</p>
+                <p class="subtitle">Easily search your snippets by content, category, web address, application and more</p>
             </div>
 
             <div>
-                <p>Quick search</p>
-                <p>Easily search your snippets by content, category, web address, application and more</p>
+                <p class="title">iCloud Sync</p>
+                <p class="subtitle">Easily search your snippets by content, category, web address, application and more</p>
             </div>
 
             <div>
-                <p>Quick search</p>
-                <p>Easily search your snippets by content, category, web address, application and more</p>
+                <p class="title">Complete history</p>
+                <p class="subtitle">Easily search your snippets by content, category, web address, application and more</p>
             </div>
         </div>
     </section>
 
     <div>
-        <h3>Keep track of your snippets</h3>
-        <p>Clipboard instantly stores any time you copy in the cloud</p>
+        <h3 class="title">Access clipboard anywhere</h3>
+        <p class="subtitle">Clipboard instantly stores any time you copy in the cloud</p>
     </div>
 
-    <img src="" alt="" class="pc-img">
+    <img src="./images/image-devices.png" alt="" class="pc-img">
 
     <div>
-        <h3>Keep track of your snippets</h3>
-        <p>Clipboard instantly stores any time you copy in the cloud</p>
+        <h3 class="title">Supercharge your workflow</h3>
+        <p class="subtitle">Clipboard instantly stores any time you copy in the cloud</p>
     </div>
 
     <section class="container-service">
         <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+            <img src="./images/icon-text.svg" alt="">
+            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
         </div>
 
         <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+            <img src="./images/icon-preview.svg" alt="">
+            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
         </div>
 
         <div>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+            <img src="./images/icon-blacklist.svg" alt="">
+            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
         </div>
     </section>
 
     <div class="container-logos">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="./images/logo-microsoft.png" alt="">
+        <img src="./images/logo-ibm.png" alt="">
+        <img src="./images/logo-hp.png" alt="">
+        <img src="./images/logo-google.png" alt="">
+        <img src="./images/logo-vector-graphics.png" alt="">
     </div>
 
-    <section>
-        <img src="" alt="">
+    <section class="container-bottom">
         <h2>A history of everything you copy</h2>
         <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices</p>
         <div>
@@ -173,6 +268,29 @@
             <button>Download for mac</button>
         </div>
     </section>
+
+    <footer>
+        <img src="" alt="">
+        <div>
+            <p>FAQs</p>
+            <p>Contact us</p>
+        </div>
+
+        <div>
+            <p>FAQs</p>
+            <p>Contact us</p>
+        </div>
+
+        <div>
+            <p>FAQs</p>
+        </div>
+
+        <div>
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-instagram.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+        </div>
+    </footer>
     
 </body>
 </html>
