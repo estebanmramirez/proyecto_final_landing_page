@@ -22,20 +22,22 @@
     }
 
     .container {
-        width: 500px;
-        margin-left: 22%;
+        background-image: url(./images/bg-header-desktop.png);
+        
     }
 
-    .container img {
+
+    .container div img {
         width: 100px;
-        margin-left: 35%;
         cursor: pointer;
+        margin-top: 40px;
     }
 
     .container h2 {
         font-family: var(--font-family);
         font-weight: bold;
         text-align: center;
+        font-size: 50px;
     }
 
     .container p {
@@ -45,7 +47,10 @@
     }
 
     .container div {
-        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
     }
 
     .container div button:nth-child(1){
@@ -75,8 +80,8 @@
     }
 
     .middle {
-        width: 500px;
-        margin-left: 22%;
+        padding-top: 30px;
+        margin-bottom: 30px;
     }
 
     .middle h3{
@@ -92,11 +97,12 @@
 
     .container-middle {
         display: flex;
+        justify-content: center;
+        gap: 45px;
     }
 
     .container-img{
-        width: 380px;
-        height: 380px;
+      padding-right: 50px;
     }
 
     .container-middle div {
@@ -108,14 +114,15 @@
     .title {
         font-family: var(--font-family);
         font-weight: bold;
-        text-align: center;
+        text-align: left;
     }
 
     .subtitle {
         font-family: var(--font-family);
         color: var(--grayish-blue);
-        text-align: center;
+        text-align: left;
         font-size: 14px;
+        line-height: 1.6;
     }
 
     .pc-img {
@@ -130,6 +137,7 @@
 
     .container-logos {
         display: flex;
+        justify-content: center;
     }
 
     .container-logos img {
@@ -213,38 +221,47 @@
 <body>
 
     <section class="container">
-        <img src="./images/logo.svg" alt="">
+
+        <div>
+            <img src="./images/logo.svg" alt="">
+        </div>
+
         <h2>A history of everything you copy</h2>
-        <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices</p>
+        <p>Clipboard allows you to track and organize everything you copy. <br> Instantly access your clipboard on all your devices</p>
+
         <div>
             <button>Download for IOS</button>
             <button>Download for mac</button>
         </div>
+
     </section>
 
     <div class="middle">
         <h3>Keep track of your snippets</h3>
-        <p>Clipboard instantly stores any time you copy in the cloud, meaning you can access your snippets inmediately on all your devices. Our mac and ios app will help you organize everything</p>
+        <p>Clipboard instantly stores any time you copy in the cloud, meaning you can access <br> your snippets inmediately on all your devices. Our mac and ios app will help you <br> organize everything</p>
     </div>
 
     <section class="container-middle">
+
         <img src="./images/image-computer.png" alt="" class="container-img">
+
         <div>
             <div>
                 <p class="title">Quick search</p>
-                <p class="subtitle">Easily search your snippets by content, category, web address, application and more</p>
+                <p class="subtitle">Easily search your snippets by content, <br> category, web address, application and more</p>
             </div>
 
             <div>
                 <p class="title">iCloud Sync</p>
-                <p class="subtitle">Easily search your snippets by content, category, web address, application and more</p>
+                <p class="subtitle">Instantly saves and syncs snippets across all <br> your devices</p>
             </div>
 
             <div>
                 <p class="title">Complete history</p>
-                <p class="subtitle">Easily search your snippets by content, category, web address, application and more</p>
+                <p class="subtitle">Retrieve any snippets from the first moment <br> you started using the app</p>
             </div>
         </div>
+
     </section>
 
     <div>
