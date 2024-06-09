@@ -111,6 +111,26 @@
         padding-right: 10px;
     }
 
+    .container_down {
+        margin-top: 30px;
+        margin-bottom: 50px;   
+    }
+
+    .title_1 {
+        font-family: var(--font-family);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .subtitle_1 {
+        font-family: var(--font-family);
+        color: var(--grayish-blue);
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.6;
+
+    }
+
     .title {
         font-family: var(--font-family);
         font-weight: bold;
@@ -125,19 +145,42 @@
         line-height: 1.6;
     }
 
+    .title_2 {
+        font-family: var(--font-family);
+        font-weight: bold;
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .subtitle_2 {
+        font-family: var(--font-family);
+        color: var(--grayish-blue);
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .container_pc {
+        display: flex;
+        justify-content: center;
+    }
+
     .pc-img {
         width: 600px;
         height: 380px;
-        margin-left: 10%;
+        
     }
 
     .container-service {
         display: flex;
+        justify-content: space-evenly;
     }
 
     .container-logos {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .container-logos img {
@@ -147,8 +190,15 @@
     }
 
     .container-bottom {
-        width: 500px;
-        margin-left: 22%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+    }
+
+    .container-bottom div div {
+        display: flex;
+        justify-content: center;
     }
 
     .container-bottom h2 {
@@ -192,10 +242,16 @@
 
     .footer {
         display: flex;
-        justify-content: space-around;
-        background: var(--grayish-blue);
+        justify-content: space-evenly;
+        align-items: center;
+        background: gainsboro;
         height: 150px;
         margin-top: 20px;
+    }
+
+    .footer_container {
+        display: flex;
+        gap: 150px;
     }
 
     .footer img {
@@ -207,6 +263,7 @@
     .footer div img {
         width: 18px;
         height: 18px;
+        margin-left: 15px;
     }
 
     .footer div p {
@@ -218,6 +275,7 @@
     }
 
 </style>
+
 <body>
 
     <section class="container">
@@ -264,35 +322,39 @@
 
     </section>
 
-    <div>
-        <h3 class="title">Access clipboard anywhere</h3>
-        <p class="subtitle">Clipboard instantly stores any time you copy in the cloud</p>
+    <div class="container_down">
+        <h3 class="title_1">Access clipboard anywhere</h3>
+        <p class="subtitle_1">Clipboard instantly stores any time you copy in the cloud</p>
     </div>
 
-    <img src="./images/image-devices.png" alt="" class="pc-img">
+    <div class="container_pc">
+        <img src="./images/image-devices.png" alt="" class="pc-img">
+    </div>
 
-    <div>
-        <h3 class="title">Supercharge your workflow</h3>
-        <p class="subtitle">Clipboard instantly stores any time you copy in the cloud</p>
+    <div class="container_down">
+        <h3 class="title_1">Supercharge your workflow</h3>
+        <p class="subtitle_1">Clipboard instantly stores any time you copy in the cloud</p>
     </div>
 
     <section class="container-service">
-        <div>
-            <img src="./images/icon-text.svg" alt="">
-            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
-            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+        <div class="img_icon">
+            <div>
+                <img src="./images/icon-text.svg" alt="" >
+            </div>
+            <p class="title_2">Create blacklist</p>
+            <p class="subtitle_2">Ensure sensitive information never makes ir <br> way to your clipboard by excluding certain <br> sources</p>
         </div>
 
         <div>
             <img src="./images/icon-preview.svg" alt="">
-            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
-            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+            <p class="title_2">Plain text snippets</p>
+            <p class="subtitle_2">Remove unwanted formatting from copied text <br> for a consistent look</p>
         </div>
 
         <div>
             <img src="./images/icon-blacklist.svg" alt="">
-            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
-            <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ab cumque</p>
+            <p class="title_2">Sneak preview</p>
+            <p class="subtitle_2">Quick preview of all snippets on your clipboard <br> for easy access</p>
         </div>
     </section>
 
@@ -305,28 +367,39 @@
     </div>
 
     <section class="container-bottom">
-        <h2>A history of everything you copy</h2>
-        <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices</p>
+
         <div>
-            <button>Download for IOS</button>
-            <button>Download for mac</button>
+
+            <h2>A history of everything you copy</h2>
+            <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices</p>
+
+            <div>
+                <button>Download for IOS</button>
+                <button>Download for mac</button>
+            </div>
+
         </div>
+
     </section>
 
     <footer class="footer">
         <img src="./images/logo.svg" alt="">
-        <div>
-            <p>FAQs</p>
-            <p>Contact us</p>
-        </div>
 
-        <div>
-            <p>Privacy policy</p>
-            <p>Press kit</p>
-        </div>
+        <div class="footer_container">
+            <div>
+                <p>FAQs</p>
+                <p>Contact us</p>
+            </div>
 
-        <div>
-            <p>Install guide</p>
+            <div>
+                <p>Privacy policy</p>
+                <p>Press kit</p>
+            </div>
+
+            <div>
+                <p>Install guide</p>
+                <p>Press kit</p>
+            </div>
         </div>
 
         <div>
@@ -334,6 +407,7 @@
             <img src="./images/icon-instagram.svg" alt="">
             <img src="./images/icon-twitter.svg" alt="">
         </div>
+
     </footer>
     
 </body>
